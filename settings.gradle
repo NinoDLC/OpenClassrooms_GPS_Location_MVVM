@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "OpenClassrooms_GPS_Location_MVVM"
