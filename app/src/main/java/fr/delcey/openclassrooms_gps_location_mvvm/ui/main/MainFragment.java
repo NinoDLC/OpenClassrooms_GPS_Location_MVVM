@@ -1,5 +1,7 @@
 package fr.delcey.openclassrooms_gps_location_mvvm.ui.main;
 
+import static android.Manifest.*;
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,7 +46,8 @@ public class MainFragment extends Fragment {
         gpsPermissionButton.setOnClickListener(v ->
             ActivityCompat.requestPermissions(
                 requireActivity(),
-                new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 0
+                new String[]{permission.ACCESS_FINE_LOCATION, permission.ACCESS_COARSE_LOCATION},
+                0
             )
         );
 
