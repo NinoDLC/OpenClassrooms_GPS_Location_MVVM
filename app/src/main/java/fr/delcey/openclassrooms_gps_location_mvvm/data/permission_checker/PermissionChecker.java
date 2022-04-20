@@ -8,6 +8,9 @@ import androidx.core.content.ContextCompat;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 
+/**
+ * This class exists only for easier unit testing the MainViewModel. Ask your mentor if you don't get why ! Hint : dependency injection
+ */
 public class PermissionChecker {
 
     @NonNull
